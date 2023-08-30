@@ -11,14 +11,14 @@ public class Task3 {
 
         int operationsCount = 8;
         List<String> operations = new ArrayList<>();
-        operations.add("+11");
-        operations.add("+1");
-        operations.add("-11");
-        operations.add("+2");
-        operations.add("-2");
-        operations.add("+3");
-        operations.add("+2");
-        operations.add("-1");
+        operations.add("+ 11");
+        operations.add("+ 1");
+        operations.add("- 11");
+        operations.add("+ 2");
+        operations.add("- 2");
+        operations.add("+ 3");
+        operations.add("+ 2");
+        operations.add("- 1");
 
 //        if (scanner.hasNext()) {
 //            operationsCount = scanner.nextInt();
@@ -42,7 +42,8 @@ public class Task3 {
     }
 
     private static void parseOperation(List<Shelf> wall, String operation) {
-        int toolNumber = Integer.parseInt(operation);
+        String cleanOperation = operation.replaceAll(" ", "");
+        int toolNumber = Integer.parseInt(cleanOperation);
         boolean addition = toolNumber > 0;
 
         if (addition) {
