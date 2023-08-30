@@ -40,6 +40,4 @@ class TestTask1 {
     public void for6return20() {
         assertEquals(20, Task1.mossCellsAtMinute(6));
     }
-
-
 }
