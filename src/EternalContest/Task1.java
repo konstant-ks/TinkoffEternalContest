@@ -1,3 +1,5 @@
+package EternalContest;
+
 import java.util.Scanner;
 
 public class Task1 {
